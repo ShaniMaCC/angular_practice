@@ -1,0 +1,163 @@
+<div class="container my-3">
+  <div class="row">
+    <nav class="col-12 col-md-3 mb-5">
+      <div class="card border-0">
+        <a class="card-header fw-bold" [routerLink]="['/page1']">FOMS<br>期貨服務管理平台</a>
+        <div class="accordion list-group" id="ebookContent">
+          <ul class="accordion-item list-group-item p-0 rounded-0">
+            <h2 class="accordion-header" id="headingTradeFunction">
+              <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTrade" aria-expanded="true" aria-controls="collapseTrade">
+                <strong>交易功能</strong>
+              </button>
+            </h2>
+            <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+              data-bs-parent="#ebookContent">
+              <a class="accordion-body text-primary text-indent-sm" routerLink="#">
+                <strong>A. 母單委託</strong>
+              </a>
+              <ul>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="page1"routerLinkActive="click-style">1. 策略拆單</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="suborder_detail" routerLinkActive="click-style">2. 子單詳情</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="switch" routerLinkActive="click-style">3. 策略轉倉</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="delete_mainorder" routerLinkActive="click-style">4. 刪除母單</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="proxy" routerLinkActive="click-style">5. 代理委託</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="group_func" routerLinkActive="click-style">6. 群組分類</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="move_group" routerLinkActive="click-style">7. 移動群組</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="list_func" routerLinkActive="click-style">8. 列表篩選</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="remark" routerLinkActive="click-style">9. 備註</a>
+                </li>
+              </ul>
+            </li>
+            <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+              data-bs-parent="#ebookContent">
+              <a class="accordion-body text-primary text-indent-sm" routerLink="#">
+                <strong>B. 子單委託</strong>
+              </a>
+              <ul>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="change_qty" routerLinkActive="click-style">1. 改量</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="change_price" routerLinkActive="click-style">2. 改價</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="filter" routerLinkActive="click-style">3. 篩選</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="suborder_delete" routerLinkActive="click-style">4.
+                    刪除</a>
+                </li>
+              </ul>
+            </li>
+            <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+              data-bs-parent="#ebookContent">
+              <a class="accordion-body text-primary text-indent-sm" routerLink="#">
+                <strong>C. 指示單</strong>
+              </a>
+              <ul>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="el_order" routerLinkActive="click-style">1. 電子接單</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="add_order" routerLinkActive="click-style">2. 新增指示單</a>
+                </li>
+              </ul>
+            </li>
+            <li id="collapseTrade" class="accordion-collapse collapse show" aria-labelledby="headingTradeFunction"
+              data-bs-parent="#ebookContent">
+              <a class="accordion-body text-primary text-indent-sm" routerLink="#">
+                <strong>D. 期權商品查詢</strong>
+              </a>
+              <ul>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="futures" routerLinkActive="click-style">1. 期貨</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="option" routerLinkActive="click-style">2. 選擇權</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="accordion-item list-group-item p-0">
+            <h2 class="accordion-header" id="headingAdminFunction">
+              <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseAdmin" aria-expanded="true" aria-controls="collapseAdmin">
+                <strong>管理功能(管理者權限)</strong>
+              </button>
+            </h2>
+            <li id="collapseAdmin" class="accordion-collapse collapse dropdown" aria-labelledby="headingAdminFunction"
+              data-bs-parent="#ebookContent">
+              <a class="accordion-body text-indent-sm text-primary" role="button" data-bs-toggle="dropdown" routerLink="#"
+                aria-expanded="false">
+                <strong>A. 買方資訊</strong>
+              </a>
+              <ul>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="clientInfo_connect" routerLinkActive="click-style">1.
+                    連線對應</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="clientInfo_account" routerLinkActive="click-style">2.
+                    帳號對應</a></li>
+              </ul>
+            </li>
+            <li id="collapseAdmin" class="accordion-collapse collapse" aria-labelledby="headingAdminFunction"
+              data-bs-parent="#ebookContent">
+              <a class="accordion-body text-indent-sm text-primary" routerLink="#">
+                <strong>B. 交易群組</strong>
+              </a>
+              <ul>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="traderGroup_setting" routerLinkActive="click-style">1.
+                    交易群組設定</a>
+                </li>
+                <li class="hover-menu"><a class="accordion-body text-indent-lg" routerLink="traderGroup_associate" routerLinkActive="click-style">2.
+                    對應關聯帳號列表</a></li>
+              </ul>
+            </li>
+            <li id="collapseAdmin" class="accordion-collapse collapse  hover-menu"
+              aria-labelledby="headingAdminFunction" data-bs-parent="#ebookContent">
+              <a class="accordion-body text-indent-sm text-primary" routerLink="trader_setting" routerLinkActive="click-style">
+                <strong>C. 交易員帳號設定</strong>
+              </a>
+            </li>
+          </ul>
+          <ul class="accordion-item list-group-item p-0">
+            <h2 class=" accordion-header" id="headingBasicFunction">
+            <button class="accordion-button bg-primary text-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseBasic" aria-expanded="true" aria-controls="collapseBasic">
+              <strong>基本功能</strong>
+            </button>
+            </h2>
+            <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+              aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
+              <a class="accordion-body text-indent-sm text-primary" routerLink="login" routerLinkActive="click-style">
+                <strong>A. 登入</strong>
+              </a>
+            </li>
+            <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+              aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
+              <a class="accordion-body text-indent-sm text-primary" routerLink="logout" routerLinkActive="click-style">
+                <strong>B. 登出</strong>
+              </a>
+            </li>
+            <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+              aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
+              <a class="accordion-body text-indent-sm text-primary" routerLink="psd" routerLinkActive="click-style">
+                <strong>C. 變更密碼</strong>
+              </a>
+            </li>
+            <li id="collapseBasic" class="accordion-collapse collapse hover-menu"
+              aria-labelledby="headingBasicFunction" data-bs-parent="#ebookContent">
+              <a class="accordion-body text-indent-sm text-primary" routerLink="user_setting" routerLinkActive="click-style">
+                <strong>D. 個人化設定</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="col-12 col-md-9">
+      <router-outlet></router-outlet>
+      
+    </main>
+  </div>
+</div>

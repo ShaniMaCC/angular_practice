@@ -1,0 +1,53 @@
+<header class="mb-4">
+    <h2 class="fw-bold">交易功能</h2>
+    <h4 class="text-secondary fw-bold">母單委託—拆單</h4>
+  </header>
+  <ol class="nav nav-tabs" id="split_orderTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="single-tab" data-bs-toggle="tab" data-bs-target="#single" type="button"
+        role="tab" aria-controls="single" aria-selected="true">單筆</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="by_qty-tab" data-bs-toggle="tab" data-bs-target="#by_qty" type="button"
+        role="tab" aria-controls="by_qty" aria-selected="false">分時(拆量)</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="by_time-tab" data-bs-toggle="tab" data-bs-target="#by_time" type="button"
+        role="tab" aria-controls="by_time" aria-selected="false">分時</button>
+    </li>
+  </ol>
+  <div class="tab-content mt-5" id="split_orderTabContent">
+    <ol class="tab-pane fade show active" id="single" role="tabpanel" aria-labelledby="single">
+      <li class="my-2">選擇欲拆單的拆單按鈕</li>
+      <li class="my-2">選擇單筆頁籤</li>
+      <li class="my-2">輸入策略資訊(點選查價可出現即時行情，點選金額將自動帶入至價格欄位)</li>
+      <li class="my-2">確認商品</li>
+      <li class="my-2">更新於母單列表，點選母單即顯示委託歷程</li>
+      <li class="my-2">點選該筆的子單按鈕，可看到子單詳情</li>
+      <li class="my-2">點選該筆策略，可看到子單狀態</li>
+      <img src={{img2_2_10.Url}} alt={{img2_2_10.Alt}}>
+      <img src={{img2_2_11.Url}} alt={{img2_2_11.Alt}}>
+    </ol>
+    <ol class="tab-pane fade" id="by_qty" role="tabpanel" aria-labelledby="by_qty">
+      <li class="my-2">選擇欲拆單的拆單按鈕</li>
+      <li class="my-2">選擇分時(拆量)頁籤</li>
+      <li class="my-2">輸入策略資訊(分時策略可進行特別設定)</li>
+      <li class="my-2">確認商品</li>
+      <li class="my-2">點選該筆的子單按鈕，可看到子單詳情</li>
+      <li class="my-2">點選欲查看的策略交易，可看到子單成交狀況</li>
+      <li class="my-2">策略委託時間未到，子單會列在排程頁籤，如已送出委託會放進子單頁籤</li>
+      <img src={{img2_2_12.Url}} alt={{img2_2_12.Alt}}>
+      <img src={{img2_2_13.Url}} alt={{img2_2_13.Alt}}>
+    </ol>
+    <ol class="tab-pane fade" id="by_time" role="tabpanel" aria-labelledby="by_time">
+      <li class="my-2">選擇欲拆單的拆單按鈕</li>
+      <li class="my-2">選擇分時頁籤</li>
+      <li class="my-2">輸入策略資訊(分時策略可進行特別設定)</li>
+      <li class="my-2">確認商品</li>
+      <li class="my-2">更新於母單列表</li>
+      <li class="my-2">點選該筆的子單按鈕，可看到子單詳情</li>
+      <li class="my-2">點選欲查看的策略交易，可看到子單成交狀況</li>
+      <li class="my-2">策略委託時間未到，子單會列在排程頁籤，如已送出委託會放進子單頁籤</li>
+      <img src={{img2_2_14.Url}} alt={{img2_2_14.Alt}}>
+    </ol>
+  </div>

@@ -1,0 +1,37 @@
+<!-- app.component.html -->
+<h2>Pipe</h2>
+<h3>Power boost: {{ 2 | exponentialStrength:10 }}</h3>
+<h3>Power boost: {{ 3 | exponentialStrength:5 }}</h3>
+<!-- 雙向綁定 -->
+<h3>Power Boost Calculator</h3>
+<label for="power-input">Normal power: </label>
+<input id="power-input" type="text" [(ngModel)]="power" />
+<label for="boost-input">Boost factor: </label>
+<input id="boost-input" type="text" [(ngModel)]="factor" />
+<p>Super Hero Power: {{ power | exponentialStrength: factor }}</p>
+
+<div *ngFor="let hero of ( Heros | flyingHeros )" >
+  {{hero.name}}
+</div>
+{{onAddHero()}}
+
+<h2>ng-content</h2>
+<app-multi-content [contentCount]="'1'">
+  <p>yyy</p>
+</app-multi-content>
+<app-multi-content [contentCount]="'2'">
+  <p xxx>xxx</p>
+</app-multi-content>
+
+
+<app-content-template [styleCount]="'1'">
+  <button class="style1">Click Me</button>
+</app-content-template>
+
+<app-content-template [styleCount]="'2'">
+  <button class="style2">Click Me</button>
+</app-content-template>
+
+<app-content-template [styleCount]="'3'">
+  <button class="style3">Click Me</button>
+</app-content-template>

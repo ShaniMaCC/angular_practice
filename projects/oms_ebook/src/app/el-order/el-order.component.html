@@ -1,0 +1,55 @@
+<header class="mb-4">
+    <h2 class="fw-bold">交易功能</h2>
+    <h4 class="text-secondary fw-bold">指示單—電子接單</h4>
+  </header>
+  <ol class="nav nav-tabs" id="el_orderTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="accept_order-tab" data-bs-toggle="tab" data-bs-target="#accept_order"
+        type="button" role="tab" aria-controls="accept_order" aria-selected="true">接單</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="reject-tab" data-bs-toggle="tab" data-bs-target="#reject" type="button"
+        role="tab" aria-controls="reject" aria-selected="false">拒絕</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="all_accept_order-tab" data-bs-toggle="tab" data-bs-target="#all_accept_order"
+        type="button" role="tab" aria-controls="all_accept_order" aria-selected="false">全數接單</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="all_reject-tab" data-bs-toggle="tab" data-bs-target="#all_reject" type="button"
+        role="tab" aria-controls="all_reject" aria-selected="false">全數拒絕</button>
+    </li>
+  </ol>
+  <div class="tab-content mt-5" id="el_orderTabContent">
+    <ol class="tab-pane fade show active" id="accept_order" role="tabpanel" aria-labelledby="accept_order">
+      <li class="my-2">勾選欲承作之指示單</li>
+      <li class="my-2">點選接單</li>
+      <li class="my-2">選擇欲分類之群組(現有分類或新增)</li>
+      <li class="my-2">確認</li>
+      <li class="my-2">新增於母單委託列表</li>
+      <img src={{img2_1_1.Url}} alt={{img2_1_1.Alt}}>
+      <img src={{img2_1_2.Url}} alt={{img2_1_2.Alt}}>
+    </ol>
+    <ol class="tab-pane fade" id="reject" role="tabpanel" aria-labelledby="reject">
+      <li class="my-2">勾選欲拒絕之指示單</li>
+      <li class="my-2">點選拒絕</li>
+      <li class="my-2">確認</li>
+      <li class="my-2">更新於指示單列表</li>
+      <img src={{img2_1_3.Url}} alt={{img2_1_3.Alt}}>
+      <img src={{img2_1_4.Url}} alt={{img2_1_4.Alt}}>
+    </ol>
+    <ol class="tab-pane fade" id="all_accept_order" role="tabpanel" aria-labelledby="all_accept_order">
+      <li class="my-2">點選全部接單</li>
+      <li class="my-2">選擇欲分類之群組(現有分類或新增)</li>
+      <li class="my-2">確認</li>
+      <li class="my-2">新增於母單委託列表</li>
+      <img src={{img2_1_5.Url}} alt={{img2_1_5.Alt}}>
+      <img src={{img2_1_6.Url}} alt={{img2_1_6.Alt}}>
+    </ol>
+    <ol class="tab-pane fade" id="all_reject" role="tabpanel" aria-labelledby="all_reject">
+      <li class="my-2">點選全數拒絕</li>
+      <li class="my-2">確認</li>
+      <li class="my-2">更新於指示單列表 </li>
+      <img src={{img2_1_7.Url}} alt={{img2_1_7.Alt}}>
+    </ol>
+  </div>

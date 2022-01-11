@@ -1,0 +1,82 @@
+<header class="mb-4">
+    <h2 class="fw-bold">管理功能(管理者權限)</h2>
+    <h4 class="text-secondary fw-bold">交易員帳號設定</h4>
+    <strong>交易員權限：母單委託、子單委託、指示單(接單)、期權商品檔</strong><br>
+    <strong>管理員權限：母單委託、子單委託、指示單(接單)、期權商品檔、買方資訊(設定)、交易群組(設定)、交易員(設定)</strong>
+</header>
+<ol class="nav nav-tabs" id="traderTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="addtrader-tab" data-bs-toggle="tab"
+            data-bs-target="#addtrader" type="button" role="tab" aria-controls="addtrader"
+            aria-selected="true">新增帳號 <strong class="text-danger">※隔日生效</strong></button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="edittrader-tab" data-bs-toggle="tab" data-bs-target="#edittrader"
+            type="button" role="tab" aria-controls="edittrader" aria-selected="false">編輯帳號</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="resettrader-tab" data-bs-toggle="tab" data-bs-target="#resettrader"
+            type="button" role="tab" aria-controls="resettrader" aria-selected="false">重製交易員密碼</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="disabletrader-tab" data-bs-toggle="tab"
+            data-bs-target="#disabletrader" type="button" role="tab" aria-controls="disabletrader"
+            aria-selected="false">停用帳號</button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="deltrader-tab" data-bs-toggle="tab" data-bs-target="#deltrader"
+            type="button" role="tab" aria-controls="deltrader" aria-selected="false">刪除帳號</button>
+    </li>
+</ol>
+<div class="tab-content mt-5" id="traderTabContent">
+    <ol class="tab-pane fade show active" id="addtrader" role="tabpanel" aria-labelledby="addtrader">
+
+        <li class="my-2">點選新增帳號</li>
+        <li class="my-2">輸入帳號資訊、選擇權限</li>
+        <li class="my-2">儲存</li>
+        <li class="my-2">新增於交易員帳號列表</li>
+        <li class="list-style-none my-2"><img src={{img3_3_1.Url}}
+                alt={{img3_3_1.Alt}}></li>
+        <li class="list-style-none my-2"><img src={{img3_3_2.Url}} alt={{img3_3_2.Alt}}></li>
+    </ol>
+    <ol class="tab-pane fade " id="edittrader" role="tabpanel" aria-labelledby="edittrader">
+        <li class="my-2">點選編輯</li>
+        <li class="my-2">輸入欲更新資料</li>
+        <li class="my-2">儲存</li>
+        <li class="my-2">更新於交易員帳號列表</li>
+        <li class="list-style-none my-2"><img src={{img3_3_3.Url}}
+                alt={{img3_3_3.Alt}}></li>
+        <li class="list-style-none my-2"><img src={{img3_3_4.Url}} alt={{img3_3_4.Alt}}>
+        </li>
+    </ol>
+    <ol class="tab-pane fade " id="resettrader" role="tabpanel" aria-labelledby="resettrader">
+        <li class="my-2">點選重置</li>
+        <li class="my-2">輸入兩次新密碼</li>
+        <li class="my-2">變更</li>
+        <li class="my-2">確定密碼變更成功</li>
+        <strong>※管理員重製密碼後，交易員重新登入仍須自行變更密碼</strong>
+        <li class="list-style-none my-2"><img src={{img3_3_5.Url}} alt={{img3_3_5.Alt}}>
+        </li>
+    </ol>
+    <ol class="tab-pane fade " id="disabletrader" role="tabpanel" aria-labelledby="disabletrader">
+        <li class="my-2">點選編輯</li>
+        <li class="my-2">狀態切換為停用</li>
+        <li class="my-2">儲存</li>
+        <li class="my-2">狀態更新為停用</li>
+        <li class="my-2">用該帳號重新登入顯示查無帳號資料</li>
+        <li class="list-style-none my-2"><img src={{img3_3_6.Url}}
+                alt={{img3_3_6.Alt}}></li>
+        <li class="list-style-none my-2"><img src={{img3_3_7.Url}} alt={{img3_3_7.Alt}}></li>
+    </ol>
+    <ol class="tab-pane fade" id="deltrader" role="tabpanel" aria-labelledby="deltrader">
+        <li class="my-2">點選刪除</li>
+        <li class="my-2">確認刪除</li>
+        <li class="my-2">更新於交易員帳號清單</li>
+        <li class="my-2">用該帳號重新登入顯示查無帳號資料</li>
+        <li class="list-style-none my-2"><img src={{img3_3_8.Url}}
+                alt={{img3_3_8.Alt}}></li>
+        <li class="list-style-none my-2"><img src={{img3_3_9.Url}} alt={{img3_3_9.Alt}}>
+        </li>
+    </ol>
+</div>

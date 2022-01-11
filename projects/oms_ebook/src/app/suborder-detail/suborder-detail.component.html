@@ -1,0 +1,71 @@
+<header class="mb-4">
+  <h2 class="fw-bold">交易功能</h2>
+  <h4 class="text-secondary fw-bold">母單委託—子單詳情</h4>
+</header>
+<ol class="nav nav-tabs" id="sub_order_detailTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="change_qty-tab" data-bs-toggle="tab" data-bs-target="#change_qty" type="button"
+      role="tab" aria-controls="change_qty" aria-selected="true">改量</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="change_price-tab" data-bs-toggle="tab" data-bs-target="#change_price" type="button"
+      role="tab" aria-controls="change_price" aria-selected="false">改價</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="delete_order-tab" data-bs-toggle="tab" data-bs-target="#delete_order" type="button"
+      role="tab" aria-controls="delete_order" aria-selected="false">刪單</button>
+  </li>
+</ol>
+<div class="tab-content mt-5" id="sub_order_detailTabContent">
+  <ol class="tab-pane fade show active" id="change_qty" role="tabpanel" aria-labelledby="change_qty">
+    <li class="my-2">選擇欲減量的母單子單按鈕</li>
+    <li class="my-2">選擇該筆策略</li>
+    <li class="my-2">點選改量</li>
+    <li class="my-2">選擇減少or減為</li>
+    <li class="my-2">輸入數量，自動帶進改後量</li>
+    <li class="my-2">確認</li>
+    <li class="my-2">更新子單狀態</li>
+    <img src={{img2_2_15.Url}} alt={{img2_2_15.Alt}}>
+    <img src={{img2_2_16.Url}} alt={{img2_2_16.Alt}}>
+    <img src={{img2_2_17.Url}} alt={{img2_2_17.Alt}}>
+  </ol>
+  <ol class="tab-pane fade" id="change_price" role="tabpanel" aria-labelledby="change_price">
+    <li class="my-2">選擇欲改價的母單子單按鈕</li>
+    <li class="my-2">選擇該筆策略</li>
+    <li class="my-2">點選欲改價之子單/改價</li>
+    <li class="my-2">輸入改價資訊，自動帶進改後價</li>
+    <li class="my-2">確認</li>
+    <li class="my-2">更新子單狀態</li>
+    <img src={{img2_2_18.Url}} alt={{img2_2_18.Alt}}>
+  </ol>
+  <div class="tab-pane fade" id="delete_order" role="tabpanel" aria-labelledby="delete_order">
+    <h5 class="fw-bold">刪除策略</h5>
+    <p class="my-2">1.選擇欲刪除策略的母單子單按鈕</p>
+    <p class="my-2">2.點選欲刪除策略之刪除按鈕</p>
+    <p class="my-2">3.確認</p>
+    <p class="my-2">4.策略列表已結束，且子單狀態為刪單成功</p>
+    <img src={{img2_2_19.Url}} alt={{img2_2_19.Alt}}>
+    <img src={{img2_2_20.Url}} alt={{img2_2_20.Alt}}>
+    <br />
+    <br />
+    <br />
+    <h5 class="fw-bold">刪除子單</h5>
+    <strong>同刪除策略程序進入子單詳情</strong>
+    <p class="my-2">1.選擇欲刪除策略的母單子單按鈕</p>
+    <p class="my-2">2.點選欲刪除子單之策略</p>
+    <p class="my-2">3.點選欲刪除的子單刪單按鈕or刪除全部子單</p>
+    <p class="my-2">4.確認</p>
+    <p class="my-2">5.狀態更新為刪單成功</p>
+    <img src={{img2_2_21.Url}} alt={{img2_2_21.Alt}}>
+    <br />
+    <br />
+    <br />
+    <h5 class="fw-bold">刪除排程</h5>
+    <strong>同刪除策略程序進入子單詳情</strong>
+    <p class="my-2">1.點選欲刪除的排程刪除按鈕or刪除全部排程</p>
+    <p class="my-2">2.確認</p>
+    <p class="my-2">3.更新於排程列表、子單顯示為刪單</p>
+    <img src={{img2_2_22.Url}} alt={{img2_2_22.Alt}}>
+    <img src={{img2_2_23.Url}} alt={{img2_2_23.Alt}}>
+  </div>
+</div>

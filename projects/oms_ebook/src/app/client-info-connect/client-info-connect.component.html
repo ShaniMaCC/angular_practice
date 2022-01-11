@@ -1,0 +1,43 @@
+<header class="mb-4">
+    <h2 class="fw-bold">管理功能(管理者權限)</h2>
+    <h4 class="text-secondary fw-bold">買方資訊—連線對應</h4>
+</header>
+<ol class="nav nav-tabs" id="clientconnectTab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="addclient-tab" data-bs-toggle="tab"
+            data-bs-target="#addclient" type="button" role="tab" aria-controls="addclient"
+            aria-selected="true">新增買方資訊</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="editclient-tab" data-bs-toggle="tab" data-bs-target="#editclient"
+            type="button" role="tab" aria-controls="editclient" aria-selected="false">編輯買方資訊</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="delclient-tab" data-bs-toggle="tab" data-bs-target="#delclient"
+            type="button" role="tab" aria-controls="delclient" aria-selected="false">刪除買方資訊</button>
+    </li>
+</ol>
+<div class="tab-content mt-5" id="clientconnectTabContent">
+    <ol class="tab-pane fade show active" id="addclient" role="tabpanel"
+        aria-labelledby="addclient">
+        <li class="my-2">點選設定</li>
+        <li class="my-2">輸入上限數字</li>
+        <li class="my-2">儲存</li>
+        <li class="my-2">確定個人化設定更新成功</li>
+        <li class="list-style-none my-2"><img src={{img3_1_1.Url}} alt={{img3_1_1.Alt}}></li>
+    </ol>
+    <ol class="tab-pane fade" id="editclient" role="tabpanel" aria-labelledby="editclient">
+        <li class="my-2">點擊編輯</li>
+        <li class="my-2">輸入欲修改之買方名稱</li>
+        <li class="my-2">儲存</li>
+        <li class="my-2">更新於買方資訊列表</li>
+        <li class="list-style-none my-2"><img src={{img3_1_2.Url}} alt={{img3_1_2.Alt}}></li>
+        <li class="list-style-none my-2"><img src={{img3_1_3.Url}} alt={{img3_1_3.Alt}}></li>
+    </ol>
+    <ol class="tab-pnae fade" id="delclient" role="tabpanel" aria-labelledby="delclient">
+        <li class="my-2">點擊刪除</li>
+        <li class="my-2">確認刪除</li>
+        <li class="my-2">更新於買方資訊列表</li>
+        <li class="list-style-non my-2"><img src={{img3_1_4.Url}} alt={{img3_1_4.Alt}}></li>
+    </ol>
+</div>
