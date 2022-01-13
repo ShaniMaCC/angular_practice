@@ -24,4 +24,14 @@ export class AppComponent {
     { id: 19, name: 'Magma',  canFly: false },
     { id: 20, name: 'Tornado',  canFly: true },
   ];
+
+  counterVal = 0;
+  addOrSub(event: boolean) { 
+    if (event) {
+      this.counterVal++;
+    } else {
+      this.counterVal--;
+    }
+  }
+  fontSizePx = 16;
 }

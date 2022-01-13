@@ -8,6 +8,8 @@ import { ContentTemplateComponent } from './content-template/content-template.co
 import { MultiContentComponent } from './multi-content/multi-content.component';
 import { ExponentialStrengthPipe } from './exponential-strength.pipe';
 import { FlyingHerosPipe } from './flying-heros.pipe';
+import { ChildComponent } from './child/child.component';
+import { TemplateVariableComponent } from './template-variable/template-variable.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { FlyingHerosPipe } from './flying-heros.pipe';
     ContentTemplateComponent,
     MultiContentComponent,
     ExponentialStrengthPipe,
-    FlyingHerosPipe
+    FlyingHerosPipe,
+    ChildComponent,
+    TemplateVariableComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,28 @@
+<!-- <ng-container *ngIf="searchText">ng-container</ng-container> -->
+<!-- <ng-container *ngIf="searchText ;else t3"></ng-container> -->
+<ng-container *ngIf="searchText ;then t1 else t2"></ng-container>
+<ng-template #t1>ng-template 1</ng-template>
+<ng-template #t2>ng-template 2</ng-template>
+<ng-template #t3>ng-template 3</ng-template>
+
+
+<nav class="navbar navbar-light">
+  <div class="container">
+    <a class="navbar-brand" [class]="{highlight : isHighlight}" href="index.html" [style.font-size.px]="fontSize">conduit</a>
+    <!-- <a class="navbar-brand" [class.highlight]="isHighlight" href="index.html">conduit</a> -->
+    <input [(ngModel)]="searchText" class="form-control form-control-sm search-input" type="text" placeholder="Keyword">
+    <button class="btn btn-sm btn-primary" (click)="doSearch($event)">
+      <i class="ion-search"></i>
+    </button>
+    <span class="highlight" *ngIf="!searchText ; else searchNotify">請輸入搜尋條件</span>
+    <ng-template #searchNotify>
+      <ng-container>搜尋 : {{searchText}}</ng-container>
+    </ng-template>
+    <!-- <span class="highlight" *ngIf="!searchText ; else searchNotify">請輸入搜尋條件</span>
+    <ng-template #searchNotify>
+      <span>搜尋 : {{searchText}}</span>
+    </ng-template> -->
+
+    <!-- <span class="highlight" [style.display]="searchText? 'none': 'inline'">請輸入搜尋條件</span> -->
+  </div>
+</nav>

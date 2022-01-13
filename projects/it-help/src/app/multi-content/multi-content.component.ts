@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MultiContentComponent implements OnInit {
   @Input() contentCount: string ="";
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 

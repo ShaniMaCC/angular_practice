@@ -1,0 +1,7 @@
+<div [title]="sitename" (click)="changeTitle('hahaha',$event)" [style.font-size.px]="counter" [class.heightlight]="counter % 2 ==0">click</div>
+<input type="text" placeholder="雙向繫結" [(ngModel)]="keyword">
+<p>{{keyword}}</p>
+
+<input #tKeyword2 type="text" placeholder="單向繫結+Template Val" [value]="keyword2" (keyup.enter)="doSearch(tKeyword2.value)" (keyup.escape)="doSearch('')">
+<button (click)="doSearch(tKeyword2.value)">單向送出</button>
+<p>{{keyword2}}</p>

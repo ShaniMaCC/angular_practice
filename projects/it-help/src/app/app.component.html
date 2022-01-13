@@ -35,3 +35,13 @@
 <app-content-template [styleCount]="'3'">
   <button class="style3">Click Me</button>
 </app-content-template>
+
+
+<h2>event binding @Output()</h2>
+<div>parent component property counter: {{counterVal}}</div>
+<h2>two-way binding</h2>
+<app-child (newItemEvent)="addOrSub($event)"  [(size)]="fontSizePx"></app-child>
+<div [style.font-size.px]="fontSizePx">Resizable Text</div>
+
+<h2>template variable</h2>
+<app-template-variable></app-template-variable>
