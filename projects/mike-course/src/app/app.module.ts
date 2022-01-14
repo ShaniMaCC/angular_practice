@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { TagsComponent } from './tags/tags.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FilterArticlePipe } from './filter-article.pipe';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     ArticlesComponent,
-    TagsComponent
+    TagsComponent,
+    FilterArticlePipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

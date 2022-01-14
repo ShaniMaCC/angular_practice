@@ -7,7 +7,6 @@ import { Article } from '../article';
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent implements OnInit {
-
   constructor() { }
   @Input() list : Article[] =[];
   ngOnInit(): void {
